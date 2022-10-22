@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS1 - event</title>
+</head>
+<body>
+    <h1>eventを扱う</h1>
+
+    <h2 id="evt_clicks">クリック関係</h2>
+    <p>クリック、ダブルクリック</p>
+
+    <h2 id="evt_mouse">マウス操作関係</h2>
+    <p>マウスが乗った、離れた、対象の上で動いた、対象の上で左ボタンを押した/離した</p>
+
+    <h2>フォーカス関係</h2>
+    <p>フォーカスされた、フォーカスが離れたとき</p>
+    <input type="text" id="evt_focus">
+
+    <style>
+        #evt_transition{opacity:0; transition:1s;}
+        #evt_transition:hover{opacity:1;}
+    </style>
+    <h2 id="evt_transition">トランジションが終わったとき</h2>
+    <p>トランジションエンド</p>
+
+    <h2>変更したとき</h2>
+    <p>change/input</p>
+    <input type="color" id="evt_change">
+
+    <script src="js/sample-event.js"></script>
+</body>
+</html>
